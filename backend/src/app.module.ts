@@ -1,5 +1,6 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import * as path from 'path';
 import {
   CongresspersonController,
   LawCountMonitorController,
@@ -44,7 +45,7 @@ import {
   imports: [
     TypeOrmModule.forRoot({
       type: 'sqlite',
-      database: 'data/database.sqlite3',
+      database: path.join(__dirname, '../data/database.sqlite3'),
       entities: [
         Party,
         Congressperson,

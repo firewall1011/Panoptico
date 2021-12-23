@@ -5,6 +5,7 @@
   "author": "",
   "private": true,
   "license": "UNLICENSED",
+  "node": "^14.x",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",
@@ -32,9 +33,7 @@
     "rimraf": "^3.0.2",
     "rxjs": "^7.2.0",
     "sqlite3": "^5.0.2",
-    "typeorm": "^0.2.38"
-  },
-  "devDependencies": {
+    "typeorm": "^0.2.38",
     "@nestjs/cli": "^8.0.0",
     "@nestjs/schematics": "^8.0.0",
     "@nestjs/testing": "^8.0.0",
